@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Birzeit University Student Hub</string>
+    <string name="schedule_meeting">Schedule a Meeting</string>
+    <string name="join_study_group">Join a Study Group</string>
+    <string name="resources">Resources</string>
+    <string name="campus_map">Campus Map</string>
+    <string name="more">More</string>
+    <string name="home">Home</string>
+    <string name="my_schedule">My Schedule</string>
+    <string name="study_groups">Study Groups</string>
+    <string name="navigation_resources">Resources</string>
+    <string name="navigation_more">More</string>
+</resources>

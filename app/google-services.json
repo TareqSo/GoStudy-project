@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55578924601",
+    "project_id": "gostudy-49872",
+    "storage_bucket": "gostudy-49872.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55578924601:android:6ba9bdc669f4a1cdb1dfe8",
+        "android_client_info": {
+          "package_name": "com.example.gostudy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdcRrJrHeg19o0GQaauJhgAfTuSuO1mCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Upper-left circle button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/upper_left_button"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/primary_color"
+        android:gravity="center"
+        android:text="Button" />
+
+    <!-- Upper-right circle button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/upper_right_button"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:backgroundTint="@color/primary_color"
+        android:gravity="center"
+        android:text="Button"
+        android:textColor="@android:color/white" />
+
+    <!-- Four smaller circle buttons -->
+    <LinearLayout
+        android:id="@+id/four_buttons_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upper_left_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/primary_color"
+            android:gravity="center"
+            android:text="Button"
+            android:textColor="@android:color/white" />
+
+        <!-- Add three more buttons similarly -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/primary_color"
+            android:gravity="center"
+            android:text="Button"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/primary_color"
+            android:gravity="center"
+            android:text="Button"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/primary_color"
+            android:gravity="center"
+            android:text="Button"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Dynamic spinner -->
+    <AutoCompleteTextView
+        android:id="@+id/dynamic_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/four_buttons_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Select Item" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dynamic_spinner"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
