@@ -33,11 +33,9 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        // Initialize Firebase Auth and Database
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-        // Get references to views
         editTextName = findViewById(R.id.editText);
         editTextEmail = findViewById(R.id.editTextEmail);
         editTextStudentId = findViewById(R.id.editTextStudentId);
@@ -45,7 +43,7 @@ public class Register extends AppCompatActivity {
         buttonSignup = findViewById(R.id.buttonSignup);
         switchLoginPage = findViewById(R.id.switch1);
 
-        // Set onClickListener for Signup button
+
         buttonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,22 +53,17 @@ public class Register extends AppCompatActivity {
                 String studentId = editTextStudentId.getText().toString().trim();
                 String password = editTextPassword.getText().toString().trim();
 
-                // Create new user object
 
-                // Register user and save data to Firebase
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    // Sign in success, update UI with the signed-in user's information
                                     FirebaseUser currentUser = mAuth.getCurrentUser();
                                     String userId = currentUser.getUid();
 
-                                    // Create a User object
                                     com.example.gostudy.User user = new com.example.gostudy.User(name,email,studentId,password);
 
-                                    // Save the user object to the database under the "users" node with the userId as the key
                                     mDatabase.child("users").child(userId).setValue(user);
 
                                     Toast.makeText(Register.this, "Registration successful!", Toast.LENGTH_SHORT).show();
@@ -84,14 +77,13 @@ public class Register extends AppCompatActivity {
             }
         });
 
-        // Set onClickListener for Switch to navigate to Login page
+
         switchLoginPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate to Login page
+
                 Intent intent = new Intent(Register.this, Login.class);
                 startActivity(intent);
-                // Finish the current activity to prevent the user from coming back to the registration page using the back button
                 finish();
             }
         });

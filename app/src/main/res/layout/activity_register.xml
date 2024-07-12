@@ -4,14 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
->
+    android:background="@drawable/reg">
 
     <TextView
         android:layout_width="101dp"
         android:layout_height="48dp"
         android:layout_gravity="center"
         android:text="Signup"
-        android:textSize="24sp"
+        android:textSize="32sp"
+        android:layout_marginTop="120dp"
         android:textStyle="bold" />
 
     <EditText
@@ -19,8 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginBottom="16dp"
+        android:layout_marginTop="85dp"
 
-        android:background="@android:color/white"
         android:hint="Enter text here"
         android:textColor="@android:color/black" />
 
@@ -30,7 +31,6 @@
         android:layout_height="54dp"
         android:layout_marginBottom="16dp"
 
-        android:background="@android:color/white"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColor="@android:color/black" />
@@ -41,7 +41,6 @@
         android:layout_height="60dp"
         android:layout_marginBottom="16dp"
 
-        android:background="@android:color/white"
         android:hint="Student ID"
         android:inputType="number"
         android:textColor="@android:color/black" />
@@ -52,7 +51,6 @@
         android:layout_height="59dp"
         android:layout_marginBottom="16dp"
 
-        android:background="@android:color/white"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@android:color/black" />

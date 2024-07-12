@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app_info_layout.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main">
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:padding="16dp">
+
+        <!-- Brief description about the app -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Our App!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our app is designed to help users with [brief description of the app's purpose]. It offers [brief description of key features]."
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email address -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: example@example.com"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Phone number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1234567890"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

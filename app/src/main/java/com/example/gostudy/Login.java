@@ -17,6 +17,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Login extends AppCompatActivity {
+    private SessionManager sessionManager;
+
     private EditText editTextUsername, editTextPassword;
     private Button buttonLogin;
     private FirebaseAuth mAuth;
@@ -25,8 +27,9 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        sessionManager = new SessionManager(Login.this);
         mAuth = FirebaseAuth.getInstance();
+
 
         editTextUsername = findViewById(R.id.edit_text_email);
         editTextPassword = findViewById(R.id.edit_text_password);
@@ -53,22 +56,23 @@ public class Login extends AppCompatActivity {
         forgotPasswordTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate to ForgotPasswordActivity
-               // Intent intent = new Intent(Login.this, ForgotPasswordActivity.class);
-               // startActivity(intent);
+
             }
         });
 
         registerTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate to RegisterActivity
                 Intent intent = new Intent(Login.this, Register.class);
                 startActivity(intent);
             }
         });
+        sessionManager = new SessionManager(Login.this);
+
+
 
     }
+
 
     private void loginUser(String email, String password) {
         mAuth.signInWithEmailAndPassword(email, password)
@@ -78,9 +82,13 @@ public class Login extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(Login.this, "Login successful", Toast.LENGTH_SHORT).show();
+
+                            // Update the session login state
+                            sessionManager.setLoggedIn(true);
+
                             Intent intent = new Intent(Login.this, MainActivity.class);
                             startActivity(intent);
-                            finish(); // Prevent going back to login page
+                            finish(); //Prevent going back
                         } else {
                             // If sign in fails, display a message to the user.
                             Toast.makeText(Login.this, "Authentication failed", Toast.LENGTH_SHORT).show();

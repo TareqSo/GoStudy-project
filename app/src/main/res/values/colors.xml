@@ -6,6 +6,13 @@
     <color name="dark_gray">#757575</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="colorPrimary">#FF6200EE</color> <!-- Example color value -->
+    <color name="colorPrimary">#FF6200EE</color>
+    <color name="dark_blue">#000080</color>
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#212121</color>
+    <!-- Example color value -->
 
 </resources>

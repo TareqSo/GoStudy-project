@@ -10,4 +10,12 @@
     <string name="study_groups">Study Groups</string>
     <string name="navigation_resources">Resources</string>
     <string name="navigation_more">More</string>
+
+        <string name="select_meeting_type">Select Course Type</string>
+        <string name="enter_time">Enter Time</string>
+        <string name="enter_url">Enter URL</string>
+        <string name="enter_description">Enter Description</string>
+        <string name="add_button_label">Add</string>
+
+
 </resources>
