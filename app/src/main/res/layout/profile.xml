@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/main">
+
+    <!-- Header with buttons -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00AEEF"
+        android:padding="1dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upper_left_button"
+            android:layout_width="70dp"
+            android:layout_height="77dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="@color/primary_color"
+            android:gravity="center"
+            android:text="Button" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#004A7C"/>
+
+        <Button
+            android:id="@+id/meetingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GoHelp"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#004A7C"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upper_right_button"
+            android:layout_width="70dp"
+            android:layout_height="77dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="@color/primary_color"
+            android:gravity="center"
+            android:text="Button" />
+    </LinearLayout>
+
+    <!-- Blue line under header buttons -->
+    <View
+        android:id="@+id/headerUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#004A7C"
+        android:layout_below="@id/headerLayout"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/upper_main_button"
+        android:layout_width="70dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/primary_color"
+        android:gravity="center"
+        android:text="Button" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/upper_main2_button"
+        android:layout_width="70dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/primary_color"
+        android:gravity="center"
+        android:text="Button" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/upper_main3_button"
+        android:layout_width="70dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/primary_color"
+        android:gravity="center"
+        android:text="Button" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/upper_main4_button"
+        android:layout_width="70dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/primary_color"
+        android:gravity="center"
+        android:text="Button" />
+    <View
+        android:id="@+id/headerUnderline2"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_marginTop="84dp"
+        android:background="#004A7C"
+        android:layout_below="@id/headerLayout"/>
+
+    <LinearLayout
+        android:id="@+id/profileInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="175dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <!-- TextView for displaying user's email -->
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:gravity="left"/>
+
+        <!-- TextView for displaying user's name -->
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:gravity="left"/>
+
+        <!-- TextView for displaying user's password -->
+        <TextView
+            android:id="@+id/passwordTextView"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:gravity="left"/>
+
+        <!-- TextView for displaying user's student ID -->
+        <TextView
+            android:id="@+id/studentIdTextView"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-1dp"
+        android:background="#00AEEF" />
+
+</RelativeLayout>
