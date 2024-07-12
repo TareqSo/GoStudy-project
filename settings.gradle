@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GoStudy"
 include ':app'
-s
